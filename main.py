@@ -180,7 +180,7 @@ def main():
             client_sign(i, tbs, j["id"], j["name"])
         logger.info("完成第" + str(n) + "个用户签到")
         count += 1
-    content = '自动签到成功，共计' + count + '个贴吧'
+    content = '自动签到成功，共计'.join(str(count),'个贴吧')
     title = "百度贴吧自动签到"
     logger.info("所有用户签到结束")
     s.get(url=PUSH_PLUS_URL.join('?token', EQUAL, push_plus, '&title', EQUAL, title, '&content', EQUAL, content,
