@@ -172,15 +172,17 @@ def main():
     b = os.environ['BDUSS'].split('#')
     push_plus = os.environ['PUSH_PLUS']
     count = 0
+    userCount = 0
     for n, i in enumerate(b):
         logger.info("开始签到第" + str(n) + "个用户")
         tbs = get_tbs(i)
         favorites = get_favorite(i)
         for j in favorites:
             client_sign(i, tbs, j["id"], j["name"])
+            count += 1
         logger.info("完成第" + str(n) + "个用户签到")
-        count += 1
-    content = '自动签到成功，共计' + str(count) + '个贴吧'
+        userCount += 1
+    content = '自动签到成功，共计' + userCount + '个用户' + str(count) + '个贴吧'
     title = "百度贴吧自动签到"
     logger.info("所有用户签到结束")
     s.get(url=PUSH_PLUS_URL + '?token=' + push_plus + '&title=' + title + '&content=' + content + '&template=html')
