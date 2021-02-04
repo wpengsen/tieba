@@ -183,8 +183,7 @@ def main():
     content = '自动签到成功，共计' + str(count) + '个贴吧'
     title = "百度贴吧自动签到"
     logger.info("所有用户签到结束")
-    s.get(url=PUSH_PLUS_URL.join('?token', EQUAL, push_plus, '&title', EQUAL, title, '&content', EQUAL, content,
-                                 '&template=html'))
+    s.get(url=PUSH_PLUS_URL + '?token=' + push_plus + '&title=' + title + '&content=' + content + '&template=html')
 
 
 if __name__ == '__main__':
