@@ -182,7 +182,7 @@ def main():
             count += 1
         logger.info("完成第" + str(n) + "个用户签到")
         userCount += 1
-    content = '自动签到成功，共计' + userCount + '个用户' + str(count) + '个贴吧'
+    content = '自动签到成功，共计' + str(userCount) + '个用户' + str(count) + '个贴吧'
     title = "百度贴吧自动签到"
     logger.info("所有用户签到结束")
     s.get(url=PUSH_PLUS_URL + '?token=' + push_plus + '&title=' + title + '&content=' + content + '&template=html')
