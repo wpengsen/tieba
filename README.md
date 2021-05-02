@@ -29,7 +29,7 @@ PUSH_PLUS 存放http://pushplus.hxtrip.com/message 中一对一的生成的token
 
 ## 讨论群
 
-TG： https://t.me/tiebasign
+TG： https://t.me/tiebasign 
 
 qq群： 818794879
 
