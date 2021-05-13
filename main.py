@@ -13,7 +13,7 @@ logger = logging.getLogger(__name__)
 LIKIE_URL = "http://c.tieba.baidu.com/c/f/forum/like"
 TBS_URL = "http://tieba.baidu.com/dc/common/tbs"
 SIGN_URL = "http://c.tieba.baidu.com/c/c/forum/sign"
-PUSH_PLUS_URL = "http://pushplus.hxtrip.com/send"
+PUSH_PLUS_URL = "http://www.pushplus.plus/send"
 
 HEADERS = {
     'Host': 'tieba.baidu.com',
