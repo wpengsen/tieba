@@ -16,7 +16,7 @@ PUSH_PLUS 存放http://pushplus.hxtrip.com/message 中一对一的生成的token
 3. 任意发起一次commit，可以参考下图流程修改readme文件。
 
 - 打开`README.md`，点击修改按钮
-
+1
 ![](assets/edit.png)
 
 - 修改任意内容，这里在末尾插入了空格。移动到最下面，点击提交。
